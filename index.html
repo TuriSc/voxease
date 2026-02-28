@@ -704,6 +704,7 @@
                             <option value="es">Español</option> 
                             <option value="de">Deutsch</option> 
                             <option value="fr">Français</option> 
+                            <option value="uk">Українська</option>
                         </select>
                     </div>
                 </div>
@@ -899,6 +900,7 @@
                         >
                             <option value="qwerty">QWERTY</option>
                             <option value="abc">ABC</option>
+                            <option value="jcuken">ЙЦУКЕН</option>
                         </select>
                     </div>
                 </div>
@@ -1368,6 +1370,76 @@
                         importSettings: "📤 Importer les Paramètres",
                     },
                 },
+                uk: {
+                    name: "Українська",
+                    phrases: [
+                        { text: "Так", icon: "✅" },
+                        { text: "Ні", icon: "❌" },
+                        { text: "Дякую", icon: "🙏" },
+                        { text: "Прошу", icon: "🤝" },
+                        { text: "Не знаю", icon: "🤷" },
+                        { text: "Привіт", icon: "👋" },
+                        { text: "Бувай", icon: "👋" },
+                        { text: "Допоможи", icon: "🆘" },
+                        { text: "Мені боляче", icon: "😣" },
+                        { text: "Хочу пити", icon: "💧" },
+                        { text: "Треба в туалет", icon: "🚻" },
+                        { text: "Треба відпочити", icon: "😴" },
+                        { text: "Хочу їсти", icon: "🍽️" },
+                        { text: "Мені холодно", icon: "🥶" },
+                        { text: "Мені жарко", icon: "🥵" },
+                        { text: "Поклич лікаря", icon: "👨‍⚕️" },
+                        { text: "Поклич медсестру", icon: "👩‍⚕️" },
+                        { text: "Треба таблетки", icon: "💊" },
+                        { text: "Усе гаразд", icon: "👍" },
+                        { text: "Не зараз", icon: "⏸️" },
+                        { text: "Пізніше", icon: "⏰" },
+                    ],
+                    typeMessage: { text: "Ввести повідомлення", icon: "⌨️" },
+                    selectPhrase: "Виберіть фразу чи введіть повідомлення",
+                    ui: {
+                        settings: "⚙️ Параметри",
+                        clear: "🗑️ Очистити",
+                        speak: "🔊 Озвучувати",
+                        settingsTitle: "Параметри",
+                        language: "Мова",
+                        selectLanguage: "Вибрати мову",
+                        display: "Оформлення",
+                        darkMode: "Темний режим",
+                        listView: "Перегляд списком, не сіткою",
+                        speech: "Параметри вимови",
+                        speechRate: "Швидкість мовлення",
+                        enableSounds: "Увімкнути звуки",
+                        selectionMethods: "Способи вибору",
+                        hoverSelection: "Вибір наведенням",
+                        hoverTime: "Тривалість наведення (в секундах)",
+                        scanningMode: "Режим сканування",
+                        scanSpeed: "Швидкість сканування (в секундах)",
+                        inputDevices: "Пристрої введення",
+                        keyboardArrows: "Клавіатура (стрілки)",
+                        gamepadDPad: "Геймпад (стрілки)",
+                        gamepadLeftStick: "Лівий джойстик геймпаду",
+                        gamepadRightStick: "Правий джойстик геймпаду",
+                        invertVertical: "Обернути вертикальну вісь",
+                        invertHorizontal: "Обернути горизонтальну вісь",
+                        virtualKeyboard: "Віртуальна клавіатура",
+                        keyboardLayout: "Розкладка клавіатури",
+                        customPhrases: "Власні фрази",
+                        enterCustomPhrase: "Введіть власну фразу",
+                        add: "Додати",
+                        delete: "Видалити",
+                        close: "Закрити",
+                        typeYourMessage: "Введіть повідомлення",
+                        displayMessage: "Показати повідомлення",
+                        cancel: "Скасувати",
+                        space: "ПРОБІЛ",
+                        back: "НАЗАД",
+                        clear: "ОЧИСТИТИ",
+                        importExport: "Імпорт/експорт параметрів",
+                        exportSettings: "📥 Експорт параметрів",
+                        importSettings: "📤 Імпорт параметрів",
+                    },
+                },
             };
 
             // Keyboard layouts
@@ -1385,6 +1457,13 @@
                     ["H", "I", "J", "K", "L", "M", "N"],
                     ["O", "P", "Q", "R", "S", "T", "U"],
                     ["V", "W", "X", "Y", "Z"],
+                    [" ", ".", ",", "'", "?", "!", "BACK", "CLEAR"],
+                ],
+                jcuken: [
+                    ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"],
+                    ["Й", "Ц", "У", "К", "Е", "Н", "Г", "Ш", "Щ", "З", "Х", "Ї", "Ґ"],
+                    ["Ф", "І", "В", "А", "П", "Р", "О", "Л", "Д", "Ж", "Є"],
+                    ["Я", "Ч", "С", "М", "И", "Т", "Ь", "Б", "Ю"],
                     [" ", ".", ",", "'", "?", "!", "BACK", "CLEAR"],
                 ],
             };
@@ -1529,6 +1608,7 @@
                         es: "es-ES",
                         de: "de-DE",
                         fr: "fr-FR",
+                        uk: "uk-UA",
                     };
                     utterance.lang =
                         langMap[state.settings.language] || "en-US";
