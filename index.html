@@ -704,6 +704,7 @@
                             <option value="es">Español</option> 
                             <option value="de">Deutsch</option> 
                             <option value="fr">Français</option> 
+                            <option value="nl">Nederlands</option> 
                         </select>
                     </div>
                 </div>
@@ -1368,6 +1369,76 @@
                         importSettings: "📤 Importer les Paramètres",
                     },
                 },
+                nl: {
+                    name: "Nederlands",
+                    phrases: [
+                        { text: "Ja", icon: "✅" },
+                        { text: "Nee", icon: "❌" },
+                        { text: "Dankjewel", icon: "🙏" },
+                        { text: "Alsjeblieft", icon: "🤝" },
+                        { text: "Weet ik niet", icon: "🤷" },
+                        { text: "Hallo", icon: "👋" },
+                        { text: "Tot ziens", icon: "👋" },
+                        { text: "Ik heb hulp nodig", icon: "🆘" },
+                        { text: "Ik heb pijn", icon: "😣" },
+                        { text: "Ik heb water nodig", icon: "💧" },
+                        { text: "Ik moet naar het toilet", icon: "🚻" },
+                        { text: "Ik ben moe", icon: "😴" },
+                        { text: "Ik heb honger", icon: "🍽️" },
+                        { text: "Ik heb het koud", icon: "🥶" },
+                        { text: "Ik heb het heet", icon: "🥵" },
+                        { text: "Bel de dokter", icon: "👨‍⚕️" },
+                        { text: "Bel de verpleger", icon: "👩‍⚕️" },
+                        { text: "Ik heb medicijnen nodig", icon: "💊" },
+                        { text: "Het gaat goed met me", icon: "👍" },
+                        { text: "Niet nu", icon: "⏸️" },
+                        { text: "Misschien later", icon: "⏰" },
+                    ],
+                    typeMessage: { text: "Bericht typen", icon: "⌨️" },
+                    selectPhrase: "Selecteer een zin of typ je bericht",
+                    ui: {
+                        settings: "⚙️ Instellingen",
+                        clear: "🗑️ Wissen",
+                        speak: "🔊 Spreken",
+                        settingsTitle: "Instellingen",
+                        language: "Taal",
+                        selectLanguage: "Taal Selecteren",
+                        display: "Weergave",
+                        darkMode: "Donkere Modus",
+                        listView: "Lijstweergave (in plaats van Raster)",
+                        speech: "Spraakinstellingen",
+                        speechRate: "Spreeksnelheid",
+                        enableSounds: "Geluiden Inschakelen",
+                        selectionMethods: "Selectiemethoden",
+                        hoverSelection: "Hoverselectie",
+                        hoverTime: "Hovertijd (seconden)",
+                        scanningMode: "Scanmodus",
+                        scanSpeed: "Scansnelheid (seconden)",
+                        inputDevices: "Invoerapparaten",
+                        keyboardArrows: "Toetsenbord (Pijltjestoetsen)",
+                        gamepadDPad: "Gamepad D-Pad",
+                        gamepadLeftStick: "Gamepad Linker Joystick",
+                        gamepadRightStick: "Gamepad Rechter Joystick",
+                        invertVertical: "Verticale As Omkeren",
+                        invertHorizontal: "Horizontale As Omkeren",
+                        virtualKeyboard: "Virtueel Toetsenbord",
+                        keyboardLayout: "Toetsenbordindeling",
+                        customPhrases: "Aangepaste Zinnen",
+                        enterCustomPhrase: "Aangepaste zin invoeren",
+                        add: "Toevoegen",
+                        delete: "Verwijderen",
+                        close: "Sluiten",
+                        typeYourMessage: "Typ Je Bericht",
+                        displayMessage: "Bericht Weergeven",
+                        cancel: "Annuleren",
+                        space: "SPATIE",
+                        back: "TERUG",
+                        clear: "WISSEN",
+                        importExport: "Instellingen Importeren/Exporteren",
+                        exportSettings: "📥 Exporteer Instellingen",
+                        importSettings: "📤 Importeer Instellingen",
+                    },
+                },
             };
 
             // Keyboard layouts
@@ -1529,6 +1600,7 @@
                         es: "es-ES",
                         de: "de-DE",
                         fr: "fr-FR",
+                        nl: "nl-NL",
                     };
                     utterance.lang =
                         langMap[state.settings.language] || "en-US";
