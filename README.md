@@ -17,6 +17,7 @@ A self-contained, offline-capable web application for augmentative and alternati
   - German (Deutsch)
   - French (Français)
   - Dutch (Nederlands)
+  - Basque (Euskara)
 
 ### Input Methods
 
