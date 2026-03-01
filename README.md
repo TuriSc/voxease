@@ -100,6 +100,9 @@ USE AT YOUR OWN RISK. The developer assumes no liability for any consequences of
 
 ## Version history
 
+- 2026.03.01 - v1.0.1
+  - Add Ukrainian, Dutch, Basque languages
+  - Select browser language and matching keyboard layout automatically
 - 2026.02.24 - v1.0.0 - First release
 
 ## More Information
