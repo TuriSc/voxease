@@ -101,11 +101,12 @@ USE AT YOUR OWN RISK. The developer assumes no liability for any consequences of
 ## Version history
 
 - 2026.03.01 - v1.0.1
-  - Add Ukrainian, Dutch, Basque languages
+  - Add Ukrainian, Dutch, Basque languages (thanks @nykula, @JayVisschedijk, @xezpeleta)
   - Select browser language and matching keyboard layout automatically
   - Speak output banner text on click
   - Scroll view in scanning mode
   - Sort phrases by urgency
+  - Fix output banner and disclaimer display on small screens
 - 2026.02.24 - v1.0.0 - First release
 
 ## More Information

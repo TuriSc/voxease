@@ -2,7 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+        />
         <meta name="theme-color" content="#1c8eeb" />
         <meta
             name="description"
@@ -46,11 +49,13 @@
                 flex-shrink: 0;
                 background: #1c8eeb;
                 color: white;
-                padding: 30px;
+                padding: clamp(10px, 3vh, 30px);
                 text-align: center;
                 font-size: 48px;
                 font-weight: bold;
-                min-height: 120px;
+                min-height: min(120px, 20vh);
+                max-height: 20vh;
+                overflow: hidden;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -542,7 +547,7 @@
 
             #disclaimer {
                 flex-shrink: 0;
-                padding: 10px 20px;
+                padding: 10px 20px calc(10px + env(safe-area-inset-bottom, 0px));
                 text-align: center;
                 font-size: 10px;
                 color: #999;
@@ -1787,6 +1792,18 @@
                 } catch (e) {
                     console.error("Speech synthesis failed:", e);
                     showError("Speech synthesis not supported or failed");
+                }
+            }
+
+            // Fit banner text to available space
+            function fitBannerText() {
+                const banner = document.getElementById("output-banner");
+                const maxSize = 48;
+                const minSize = 14;
+                banner.style.fontSize = maxSize + "px";
+                for (let size = maxSize; size >= minSize; size -= 2) {
+                    banner.style.fontSize = size + "px";
+                    if (banner.scrollHeight <= banner.clientHeight) break;
                 }
             }
 
@@ -3337,6 +3354,15 @@
                 applySettings();
                 checkTTSAvailability();
                 setupPWA();
+
+                const banner = document.getElementById("output-banner");
+                new MutationObserver(fitBannerText).observe(banner, {
+                    childList: true,
+                    characterData: true,
+                    subtree: true,
+                });
+                window.addEventListener("resize", fitBannerText);
+                fitBannerText();
 
                 // Check for connected gamepads on startup
                 const gamepads = navigator.getGamepads();
