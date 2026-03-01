@@ -704,6 +704,7 @@
                             <option value="es">Español</option> 
                             <option value="de">Deutsch</option> 
                             <option value="fr">Français</option> 
+                            <option value="eu">Euskara</option> 
                         </select>
                     </div>
                 </div>
@@ -1368,6 +1369,76 @@
                         importSettings: "📤 Importer les Paramètres",
                     },
                 },
+                eu: {
+                    name: "Euskara",
+                    phrases: [
+                        { text: "Bai", icon: "✅" },
+                        { text: "Ez", icon: "❌" },
+                        { text: "Eskerrik asko", icon: "🙏" },
+                        { text: "Mesedez", icon: "🤝" },
+                        { text: "Ez dakit", icon: "🤷" },
+                        { text: "Kaixo", icon: "👋" },
+                        { text: "Agur", icon: "👋" },
+                        { text: "Laguntza behar dut", icon: "🆘" },
+                        { text: "Mina dut", icon: "😣" },
+                        { text: "Ura behar dut", icon: "💧" },
+                        { text: "Komunera joan behar dut", icon: "🚻" },
+                        { text: "Nekatuta nago", icon: "😴" },
+                        { text: "Gose naiz", icon: "🍽️" },
+                        { text: "Hotza dut", icon: "🥶" },
+                        { text: "Beroa dut", icon: "🥵" },
+                        { text: "Deitu medikuari", icon: "👨‍⚕️" },
+                        { text: "Deitu erizainari", icon: "👩‍⚕️" },
+                        { text: "Sendagaia behar dut", icon: "💊" },
+                        { text: "Ondo nago", icon: "👍" },
+                        { text: "Orain ez", icon: "⏸️" },
+                        { text: "Agian gero", icon: "⏰" },
+                    ],
+                    typeMessage: { text: "Idatzi mezua", icon: "⌨️" },
+                    selectPhrase: "Hautatu esaldi bat edo idatzi zure mezua",
+                    ui: {
+                        settings: "⚙️ Ezarpenak",
+                        clear: "🗑️ Garbitu",
+                        speak: "🔊 Esan",
+                        settingsTitle: "Ezarpenak",
+                        language: "Hizkuntza",
+                        selectLanguage: "Hizkuntza hautatu",
+                        display: "Bistaratzea",
+                        darkMode: "Modu iluna",
+                        listView: "Zerrenda ikuspegia (sarearen ordez)",
+                        speech: "Ahotsaren ezarpenak",
+                        speechRate: "Ahotsaren abiadura",
+                        enableSounds: "Soinuak gaitu",
+                        selectionMethods: "Hautaketa metodoak",
+                        hoverSelection: "Gainetik hautatzea",
+                        hoverTime: "Gainetik egoteko denbora (segundoak)",
+                        scanningMode: "Eskaneatze modua",
+                        scanSpeed: "Eskaneatze abiadura (segundoak)",
+                        inputDevices: "Sarrerako gailuak",
+                        keyboardArrows: "Teklatua (gezi teklak)",
+                        gamepadDPad: "Gamepad D-Pad",
+                        gamepadLeftStick: "Gamepad ezker sticka",
+                        gamepadRightStick: "Gamepad eskuin sticka",
+                        invertVertical: "Ardatz bertikala alderantzikatu",
+                        invertHorizontal: "Ardatz horizontala alderantzikatu",
+                        virtualKeyboard: "Teklatu birtuala",
+                        keyboardLayout: "Teklatuaren diseinua",
+                        customPhrases: "Esaldi pertsonalizatuak",
+                        enterCustomPhrase: "Idatzi esaldi pertsonalizatua",
+                        add: "Gehitu",
+                        delete: "Ezabatu",
+                        close: "Itxi",
+                        typeYourMessage: "Idatzi zure mezua",
+                        displayMessage: "Mezua erakutsi",
+                        cancel: "Utzi",
+                        space: "TARTEA",
+                        back: "ATZERA",
+                        clear: "GARBITU",
+                        importExport: "Ezarpenak inportatu/esportatu",
+                        exportSettings: "📥 Ezarpenak esportatu",
+                        importSettings: "📤 Ezarpenak inportatu",
+                    },
+                },
             };
 
             // Keyboard layouts
@@ -1529,6 +1600,7 @@
                         es: "es-ES",
                         de: "de-DE",
                         fr: "fr-FR",
+                        eu: "eu-ES",
                     };
                     utterance.lang =
                         langMap[state.settings.language] || "en-US";
