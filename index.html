@@ -719,6 +719,7 @@
                             <option value="it">Italiano</option>
                             <option value="nl">Nederlands</option>
                             <option value="uk">Українська</option>
+                            <option value="no">Norsk</option>
                         </select>
                     </div>
                 </div>
@@ -1669,6 +1670,76 @@
                         importSettings: "📤 Εισαγωγή ρυθμίσεων",
                     },
                 },
+                no: {
+                    name: "Norsk",
+                    phrases: [
+                        { text: "Jeg trenger hjelp", icon: "🆘" },
+                        { text: "Jeg har smerter", icon: "😣" },
+                        { text: "Ring legen", icon: "👨‍⚕️" },
+                        { text: "Ring sykepleier", icon: "👩‍⚕️" },
+                        { text: "Jeg trenger medisin", icon: "💊" },
+                        { text: "Ja", icon: "✅" },
+                        { text: "Nei", icon: "❌" },
+                        { text: "Jeg trenger vann", icon: "💧" },
+                        { text: "Jeg må bruke toalettet", icon: "🚻" },
+                        { text: "Jeg er sulten", icon: "🍽️" },
+                        { text: "Jeg fryser", icon: "🥶" },
+                        { text: "Jeg er varm", icon: "🥵" },
+                        { text: "Jeg er trøtt", icon: "😴" },
+                        { text: "Takk", icon: "🙏" },
+                        { text: "Vær så snill", icon: "🤝" },
+                        { text: "Hallo", icon: "👋" },
+                        { text: "Hadet", icon: "👋" },
+                        { text: "Jeg vet ikke", icon: "🤷" },
+                        { text: "Jeg er ok", icon: "👍" },
+                        { text: "Ikke nå", icon: "⏸️" },
+                        { text: "Kanskje senere", icon: "⏰" },
+                    ],
+                    typeMessage: { text: "Skriv melding", icon: "⌨️" },
+                    selectPhrase: "Velg en melding eller skriv din melding",
+                    ui: {
+                        settings: "⚙️ Innstillinger",
+                        clear: "🗑️ Fjern",
+                        speak: "🔊 Snakk",
+                        settingsTitle: "Innstillinger",
+                        language: "Språk",
+                        selectLanguage: "Velg Språk",
+                        display: "Vis",
+                        darkMode: "Mørk Modus",
+                        listView: "Listevisning (istedenfor Rute)",
+                        speech: "Snakke Innstillinger",
+                        speechRate: "Snakke Rate",
+                        enableSounds: "Slå på Lyder",
+                        selectionMethods: "Velge Metoder",
+                        hoverSelection: "Sveve Valg",
+                        hoverTime: "Sveve Tid (sekunder)",
+                        scanningMode: "Skanning Modus",
+                        scanSpeed: "Skanning Fart (sekunder)",
+                        inputDevices: "Inndata Enheter",
+                        keyboardArrows: "Tastatur (Pil Taster)",
+                        gamepadDPad: "Gamepad D-Pad",
+                        gamepadLeftStick: "Gamepad Venstre Styrepinne",
+                        gamepadRightStick: "Gamepad Høyre Styrepinne",
+                        invertVertical: "Inverter Vertikal Akse",
+                        invertHorizontal: "Inverter Horisontal Akse",
+                        virtualKeyboard: "Virtual Keyboard",
+                        keyboardLayout: "Tastaturoppsett",
+                        customPhrases: "Tilpassede Meldinger",
+                        enterCustomPhrase: "Skriv inn tilpasset melding",
+                        add: "Legg til",
+                        delete: "Slett",
+                        close: "Lukk",
+                        typeYourMessage: "Skriv Din Melding",
+                        displayMessage: "Vis Melding",
+                        cancel: "Avslutt",
+                        space: "MELLOMROM",
+                        back: "TILBAKE",
+                        clear: "Rydd",
+                        importExport: "Import/Eksport Innstillinger",
+                        exportSettings: "📥 Eksport Innstillinger",
+                        importSettings: "📤 Import Innstillinger",
+                    },
+                },
             };
 
             // Keyboard layouts
@@ -1858,6 +1929,7 @@
                         nl: "nl-NL",
                         eu: "eu-ES",
                         el: "el-GR",
+                        no: "no-NO",
                     };
                     utterance.lang =
                         langMap[state.settings.language] || "en-US";

@@ -20,6 +20,7 @@ A self-contained, offline-capable web application for augmentative and alternati
   - Dutch (Nederlands)
   - Basque (Euskara)
   - Greek (Ελληνικά)
+  - Norwegian (Norsk)
 
 ### Input Methods
 
