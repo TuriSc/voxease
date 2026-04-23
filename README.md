@@ -2,6 +2,8 @@
 
 A self-contained, offline-capable web application for augmentative and alternative communication (AAC). This experimental application can help individuals with speech, sight, or language impairments communicate using pre-defined phrases or custom messages with text-to-speech support.
 
+Try it here: [turisc.github.io/voxease](https://turisc.github.io/voxease/)
+
 ## Features
 
 ### Core Communication
@@ -102,6 +104,10 @@ USE AT YOUR OWN RISK. The developer assumes no liability for any consequences of
 
 ## Version history
 
+- 2026.04.22 - v1.0.5
+  - Add language locales and voice names
+  - Change light and dark color themes to Solarized
+  - UI fixes
 - 2026.03.08 - v1.0.4
   - Add Phrases modal for editing, reordering, and deleting all phrases
   - Add Norwegian language (thanks @FSjursaether)
