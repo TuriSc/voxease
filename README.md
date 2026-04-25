@@ -23,6 +23,7 @@ Try it here: [turisc.github.io/voxease](https://turisc.github.io/voxease/)
   - Basque (Euskara)
   - Greek (Ελληνικά)
   - Norwegian (Norsk)
+  - Catalan (Català)
 
 ### Input Methods
 
